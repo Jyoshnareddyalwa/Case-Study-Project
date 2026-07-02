@@ -29,7 +29,7 @@ The project consists of:
 Analytical validation and MATLAB simulation on a representative 3×3 surface-patch grid show:
 
 - 87.3% reduction in estimation uncertainty vs. prior belief 
-- **Fluorescence most accurate sensor — precision 100 vs 50 for ATP — gets 2× more weight in Bayesian fusion
+- Fluorescence most accurate sensor — precision 100 vs 50 for ATP — gets 2× more weight in Bayesian fusion
 - ~8.1% lower estimation error (MSE) vs. the EKF baseline
 - GP and Kalman agree on 3 observed tiles — only GP reaches the 6 blocked tiles
 - 9/9 full spatial coverage vs. 3/9 for Kalman filter
