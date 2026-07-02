@@ -28,11 +28,12 @@ The project consists of:
 
 Analytical validation and MATLAB simulation on a representative 3×3 surface-patch grid show:
 
-- **91.8%** reduction in estimation uncertainty vs. prior belief
-- **81.6%** improvement over RGB-D-only estimation
+- **87.3% reduction in estimation uncertainty vs. prior belief 
+- **Fluorescence most accurate sensor — precision 100 vs 50 for ATP — gets 2× more weight in Bayesian fusion
 - **~8.1%** lower estimation error (MSE) vs. the EKF baseline
-- **9/9** full spatial coverage vs. **5/9** for EKF and other non-spatial baselines
-- EKF, designed for time-series tracking, cannot propagate estimates to unobserved patches; GP's explicit spatial correlation modeling is what enables full-surface coverage with calibrated uncertainty
+- **GP and Kalman agree on 3 observed tiles — only GP reaches the 6 blocked tiles
+- 9/9 full spatial coverage vs. 3/9 for Kalman filter
+- Kalman filter cannot propagate estimates to unobserved tiles — GP's RBF kernel enables full-surface coverage 
 
 *Note: these results are analytical and simulation-based, not from physical hardware trials.*
 
